@@ -1,4 +1,5 @@
 # Poesie
+THIS IS NOT ORIGINAL VERSION.
 
 Poesie is the **POE**ditor **S**tring **I**nternationalization **E**xtractor.
 
@@ -29,37 +30,12 @@ Even though POEditor's web interface allows you to export the strings in those f
 
 ## Installation
 
-The easiest solution to install the latest version of `poesie` is to simply run:
-
 ```sh
-gem install poesie
+git clone https://github.com/futuredapp/poesie.git
+cd poesie
+gem build poesie.gemspec
+gem install poesie-1.6.0.gem
 ```
-
-Alternatively, the following solutions will allow you to install the latest version from master, so that you can use the newest features even if they haven't been released to RubyGems yet:
-
-<details>
-<summary>Alternate Solution 1: Clone the repo and use it directly</summary>
-
-* `git clone` the project on you computer
-* If you don't have it already, install `bundler` using `gem install bundler`
-* Install `poesie`'s dependencies by running `bundle install` from the directory where you cloned the repository
-* Invoke the tool using its full path `<path/where/you/cloned/Poesie>/bin/poesie`.
-
-You could also add the `<path/where/you/cloned/Poesie>/bin/` path to your `PATH` environment variable if you prefer.
-
-</details>
-
-<details>
-<summary>Alternate Solution 2: Build and install the gem yourself</summary>
-
-* `git clone` the project on you computer
-* Run `gem build poesie.gemspec` to build the gem
-* Run `gem install poesie-*.gem` to install the gem you just built (where `*` is the version of the gem)
-* Now that it's installed in your system, you can invoke the tool using `poesie` from anywhere
-
-_This solution has the drawback of being potentially easily confused between versions of `poesie` that you installed yourself vs. official versions though._
-
-</details>
 
 ## Using POEditor properly
 
